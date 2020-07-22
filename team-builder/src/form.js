@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.css';
 
 
 function Form (props) {
@@ -19,9 +20,9 @@ function Form (props) {
     
     return (
 <form className='form container' onSubmit={onSubmit}>
-         <div >
+         <div className="form-wrapper">
 
-        <label htmlFor='username'>Username:&nbsp;
+      <p>  <label htmlFor='username'>Username:&nbsp;
           <input
             id='username'
             name='username'
@@ -32,19 +33,21 @@ function Form (props) {
             onChange={onChange}
           />
         </label>
-
+</p>
+<p>
         <label htmlFor='email'>Email:
           <input
             id='email'
             name='email'
             type='email'
             placeholder='Enter email'
-            maxLength='20'
+            
             value={value.email}
             onChange={onChange}
           />
         </label> 
-
+</p>
+<p>
         <label>Role: 
           <select name='role' value={value.role} onChange={onChange}>
             <option disabled value=''>Select a role</option>
@@ -53,6 +56,7 @@ function Form (props) {
             <option value='Data Scientist'>Data Scientis</option>
           </select>
         </label>
+        </p>
         <div >
         <h2>Add TeamMate</h2>
         <button disabled={!value.username || !value.email || !value.role}>submit</button>

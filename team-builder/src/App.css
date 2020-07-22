@@ -1,5 +1,24 @@
+body{
+  background: cornflowerblue;
+  
+}
+.form-wrapper{
+  border: 2px solid white;
+  width: 50%;
+  margin: auto;
+  background-color: rgb(115, 147, 206);
+  font-size: 2rem;
+}
+input {
+  padding: 2%;
+  border-radius: 10px;
+  width: 40%;
+}
 .App {
+  margin-top: 3%;
   text-align: center;
+ 
+  color: white;
 }
 
 .App-logo {
